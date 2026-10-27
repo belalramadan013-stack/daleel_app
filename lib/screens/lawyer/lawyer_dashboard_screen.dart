@@ -5,6 +5,7 @@ import 'billing_screen.dart';
 import 'reports_screen.dart';
 import 'office_management_screen.dart';
 import 'appointments_screen.dart';
+import 'cases_management_screen.dart';
 
 class CaseModel {
   final String id;
