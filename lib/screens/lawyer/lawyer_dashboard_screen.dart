@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import '../../theme/app_theme.dart';
 import 'clients_management_screen.dart';
 import 'billing_screen.dart';
 import 'reports_screen.dart';
 import 'office_management_screen.dart';
+import 'appointments_screen.dart';
 
 class CaseModel {
   final String id;
