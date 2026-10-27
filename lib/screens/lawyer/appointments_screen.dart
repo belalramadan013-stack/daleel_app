@@ -398,7 +398,19 @@ class _AppointmentCard extends StatelessWidget {
     required this.appointment,
     required this.onToggleComplete,
   });
-
+String _soundLabel(String type) {
+  switch (type) {
+    case 'urgent':
+      return 'عاجل';
+    case 'gentle':
+      return 'هادئ';
+    case 'custom':
+      return 'مخصص';
+    default:
+      return 'عادي';
+  }
+}
+  
   Color _typeColor() {
     switch (appointment.type) {
       case 'جلسة':
