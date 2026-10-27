@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../theme/app_theme.dart';
 import 'compliance_screen.dart';
 import 'employee_contracts_screen.dart';
 
@@ -12,7 +13,6 @@ class CompanyDashboardScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          // إحصائيات الشركة
           Row(
             children: [
               _CompanyStat(title: 'العقود', value: '24', icon: Icons.description),
@@ -23,8 +23,6 @@ class CompanyDashboardScreen extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 24),
-
-          // الأقسام
           _SectionCard(
             title: 'الامتثال القانوني',
             subtitle: 'متابعة الالتزامات والأنظمة',
@@ -41,8 +39,7 @@ class CompanyDashboardScreen extends StatelessWidget {
             icon: Icons.work,
             onTap: () {
               Navigator.of(context).push(
-                MaterialPageRoute(
-                    builder: (_) => const EmployeeContractsScreen()),
+                MaterialPageRoute(builder: (_) => const EmployeeContractsScreen()),
               );
             },
           ),
@@ -58,7 +55,6 @@ class CompanyDashboardScreen extends StatelessWidget {
             icon: Icons.group_add,
             onTap: () {},
           ),
-
           const SizedBox(height: 16),
           ElevatedButton.icon(
             onPressed: () {},
